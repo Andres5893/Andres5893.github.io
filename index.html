@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video MP4 en HTML</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #333;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        video {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Estilos adicionales para responsividad */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al Tutorial de Video MP4</h1>
+        <nav>
+            <a href="#" id="inicio-link">Inicio</a>
+            <a href="#" id="peliculas-link">Mis Películas</a>
+            <a href="#" id="contacto-link">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Introducción</h2>
+            <p>Bienvenidos a nuestra página web de películas. Aquí podrás encontrar una amplia variedad de videos para disfrutar.</p>
+            <h2>Últimas Películas Agregadas</h2>
+            <h3>El show de Truman (1998)</h3>
+            <video controls>
+                <source src="VIDEOS/EL_SHOW_DE_TRUMAN.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>El show de Truman - Géneros: Ciencia Ficción, Drama, Comedia</p>
+            
+            <h3>Jumanji (1995)</h3>
+            <video controls>
+                <source src="VIDEOS/JUMANJI.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Jumanji - Géneros: Aventura, Fantasía, Familia</p>
+            
+            <h3>Percy Jackson y el ladrón del rayo (2009)</h3>
+            <video controls>
+                <source src="VIDEOS/PERCY_JACKSON_Y_EL_LADRÓN_DEL_RAYO.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Percy Jackson y el ladrón del rayo - Géneros: Fantasía, Aventura, Familia</p>
+            
+            <h3>Percy Jackson y el mar de los monstruos (2013)</h3>
+            <video controls>
+                <source src="VIDEOS/PERCY_JACKSON_Y_EL_MAR_DE_LOS_MONSTRUOS.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Percy Jackson y el mar de los monstruos - Géneros: Fantasía, Aventura, Familia</p>
+            
+            <h3>No se aceptan devoluciones (2013)</h3>
+            <video controls>
+                <source src="VIDEOS/NO_SE_ACEPTAN_DEVOLUCIONES.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>No se aceptan devoluciones - Géneros: Comedia Dramática, Familia</p>
+            
+            <h3>Amor y otras drogas (2010)</h3>
+            <video controls>
+                <source src="VIDEOS/AMOR_Y_OTRAS_DROGAS.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Amor y otras drogas - Géneros: Comedia Romántica, Drama</p>
+            
+            <h3>El Paseo 7 (2023)</h3>
+            <video controls>
+                <source src="VIDEOS/EL_PASEO_7.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>El Paseo 7 - Géneros: No tengo información específica sobre este título, pero si es una película reciente, puedo intentar buscar más detalles.</p>
+            
+            <h3>Deadpool y Wolverine</h3>
+            <video controls>
+                <source src="VIDEOS/DEADPOOL_Y_WOLVERINE.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Deadpool y Wolverine - Géneros: Ciencia Ficción, Aventura, Acción</p>
+            
+            <h3>Sin límites (2011)</h3>
+            <video controls>
+                <source src="VIDEOS/SIN_LÍMITES.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Sin límites - Géneros: Ciencia Ficción, Thriller, Drama</p>
+            
+            <h3>El imaginario</h3>
+            <video controls>
+                <source src="VIDEOS/EL_IMAGINARIO.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>El imaginario - Géneros: Fantasía, Aventura</p>
+        </section>
+
+        <section id="peliculas" style="display: none;">
+            <h2>Mis Películas</h2>
+            <h3>Categorías:</h3>
+            <ul>
+                <li><a href="#" class="genre" data-genre="accion">Acción</a></li>
+                <li><a href="#" class="genre" data-genre="aventura">Aventura</a></li>
+                <li><a href="#" class="genre" data-genre="ciencia-ficcion">Ciencia Ficción</a></li>
+                <li><a href="#" class="genre" data-genre="drama">Drama</a></li>
+                <li><a href="#" class="genre" data-genre="suspenso">Suspenso</a></li>
+                <li><a href="#" class="genre" data-genre="comedia">Comedia</a></li>
+                <li><a href="#" class="genre" data-genre="terror">Terror</a></li>
+                <li><a href="#" class="genre" data-genre="fantasia">Fantasía</a></li>
+                <li><a href="#" class="genre" data-genre="familia">Familia</a></li>
+            </ul>
+            <div id="accion" class="genre-section" style="display: none;">
+                <h3>Películas de Acción</h3>
+                <video controls>
+                    <source src="VIDEOS/DEADPOOL_Y_WOLVERINE.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Deadpool y Wolverine - Géneros: Ciencia Ficción, Aventura, Acción</p>
+            </div>
+
+            <div id="aventura" class="genre-section" style="display: none;">
+                <h3>Películas de Aventura</h3>
+                <video controls>
+                    <source src="VIDEOS/JUMANJI.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Jumanji - Géneros: Aventura, Fantasía, Familia</p>
+                
+                <video controls>
+                    <source src="VIDEOS/PERCY_JACKSON_Y_EL_LADRÓN_DEL_RAYO.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Percy Jackson y el ladrón del rayo - Géneros: Fantasía, Aventura, Familia</p>
+                
+                <video controls>
+                    <source src="VIDEOS/PERCY_JACKSON_Y_EL_MAR_DE_LOS_MONSTRUOS.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Percy Jackson y el mar de los monstruos - Géneros: Fantasía, Aventura, Familia</p>
+                
+                <video controls>
+                    <source src="VIDEOS/EL_IMAGINARIO.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>El imaginario - Géneros: Fantasía, Aventura</p>
+            </div>
+
+            <div id="ciencia-ficcion" class="genre-section" style="display: none;">
+                <h3>Películas de Ciencia Ficción</h3>
+                <video controls>
+                    <source src="VIDEOS/EL_SHOW_DE_TRUMAN.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>El show de Truman - Géneros: Ciencia Ficción, Drama, Comedia</p>
+                
+                <video controls>
+                    <source src="VIDEOS/DEADPOOL_Y_WOLVERINE.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Deadpool y Wolverine - Géneros: Ciencia Ficción, Aventura, Acción</p>
+                
+                <video controls>
+                    <source src="VIDEOS/SIN_LÍMITES.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Sin límites - Géneros: Ciencia Ficción, Thriller, Drama</p>
+            </div>
+
+            <div id="drama" class="genre-section" style="display: none;">
+                <h3>Películas de Drama</h3>
+                <video controls>
+                    <source src="VIDEOS/EL_SHOW_DE_TRUMAN.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>El show de Truman - Géneros: Ciencia Ficción, Drama, Comedia</p>
+                
+                <video controls>
+                    <source src="VIDEOS/AMOR_Y_OTRAS_DROGAS.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Amor y otras drogas - Géneros: Comedia Romántica, Drama</p>
+                
+                <video controls>
+                    <source src="VIDEOS/SIN_LÍMITES.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Sin límites - Géneros: Ciencia Ficción, Thriller, Drama</p>
+            </div>
+
+            <div id="suspenso" class="genre-section" style="display: none;">
+                <h3>Películas de Suspenso</h3>
+                <video controls>
+                    <source src="VIDEOS/SIN_LÍMITES.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Sin límites - Géneros: Ciencia Ficción, Thriller, Drama</p>
+            </div>
+
+            <div id="comedia" class="genre-section" style="display: none;">
+                <h3>Películas de Comedia</h3>
+                <video controls>
+                    <source src="VIDEOS/EL_SHOW_DE_TRUMAN.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>El show de Truman - Géneros: Ciencia Ficción, Drama, Comedia</p>
+                
+                <video controls>
+                    <source src="VIDEOS/NO_SE_ACEPTAN_DEVOLUCIONES.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>No se aceptan devoluciones - Géneros: Comedia Dramática, Familia</p>
+                
+                <video controls>
+                    <source src="VIDEOS/AMOR_Y_OTRAS_DROGAS.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Amor y otras drogas - Géneros: Comedia Romántica, Drama</p>
+            </div>
+
+            <div id="terror" class="genre-section" style="display: none;">
+                <h3>Películas de Terror</h3>
+                <video controls>
+                    <source src="VIDEOS/SIN_LÍMITES.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <p>Sin límites - Géneros: Ciencia Ficción, Thriller, Drama</p>
+            </div>
+        </section>
+
+        <section id="contacto" style="display: none;">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna opinión o sugerencia, envíanos un correo a: <a href="mailto:torresfutpulido@gmail.com">torresfutpulido@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tutorial de Video MP4</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navLinks = document.querySelectorAll('nav a');
+            var sections = document.querySelectorAll('main section');
+            var genreLinks = document.querySelectorAll('.genre');
+            var genreSections = document.querySelectorAll('.genre-section');
+
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    sections.forEach(function(section) {
+                        section.style.display = 'none';
+                    });
+                    var targetSection = document.getElementById(link.id.replace('-link', ''));
+                    targetSection.style.display = 'block';
+
+                    // Ocultar todas las secciones de género al cambiar de sección
+                    genreSections.forEach(function(genreSection) {
+                        genreSection.style.display = 'none';
+                    });
+                });
+            });
+
+            genreLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var genre = this.getAttribute('data-genre');
+
+                    // Ocultar todas las secciones de género
+                    genreSections.forEach(function(genreSection) {
+                        genreSection.style.display = 'none';
+                    });
+
+                    // Mostrar la sección correspondiente al género
+                    var selectedGenreSection = document.getElementById(genre);
+                    selectedGenreSection.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
